@@ -1,0 +1,41 @@
+commands:
+---------
+$git init d:/work/webDesign/gitBash //to set git into the directory i want
+
+
+branches 
+- are like a line of development
+- contains all the commits
+
+
+#ssh
+----
+@to comunicate securely with the repository in windows we have to create a ssh key.:
+
+https://help.github.com/articles/generating-ssh-keys/
+
+
+@create new branch and switch to it
+$git checkout -b name_of_new_branch
+
+@clone
+$git clone https://github.com/fabbydesign/gitHubRepo d:/work/webdesign/gitbashtemp
+
+
+https://www.digitalocean.com/community/tutorials/how-to-use-git-branches
+----------
+1. $git init d:/etc
+2. $cd //to git directory
+3. $git add --all //to add all the files to git
+4. $git commit -m "my message" commmit files to repository
+5. $git checkout -b development master  //to create development branch
+6. $git git push http://etc testing //from local branch testing to create remote branch testing
+6. $git branch -a //show all local branches
+7. $git branch -r //show all remote branches
+8. $git checkout testing //to change the branch to testing
+8.1 $git push origin --delete testing //to delete a remote branch
+8.2 $git push https://github.com/etc testing //to push files and create testing branch on remote repository
+9. $touch develop.txt - create develop.txt file
+10.$ls  //list current files
+11. $git merge development --no -ff //if we are in master branch and whant to merge what is in development then do this command
+12. $git push https://github.com/fabbydesign/gitHubRepo //add to repository the files
